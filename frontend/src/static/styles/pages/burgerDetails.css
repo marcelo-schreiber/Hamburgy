@@ -1,0 +1,192 @@
+.detail-page {
+  min-height: 100vh;
+  height: 100%;
+  background-color: var(--off-white);
+}
+
+.detail-content {
+  display: grid;
+  grid-template-columns: 1fr 22rem;
+}
+
+.detail-content .detail-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  height: 100%;
+}
+
+.detail-content .detail-text p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.1rem;
+
+  padding: 7.4rem 0;
+
+  color: #000;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.detail-text p .rating {
+  margin: 0 2rem !important;
+}
+
+.detail-content .detail-text p > span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4.6rem;
+
+  margin: 0 2rem 0 4rem;
+  color: #000;
+}
+
+.detail-content .detail-text .total-reviews {
+  margin: 0;
+  font-size: 2.35rem;
+}
+
+.detail-content .detail-text .total-reviews > a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.detail-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  margin-right: 8rem;
+}
+
+.detail-buttons .menu {
+  background: var(--main-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+
+  padding: 2rem;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4.8rem;
+
+  border: none;
+  border-radius: 5.4rem;
+
+  cursor: pointer;
+
+  transition: background-color ease-in 0.2s;
+}
+
+.detail-buttons .menu:hover {
+  background-color: var(--side-main-color);
+}
+
+.detail-buttons .menu a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.detail-buttons .comments {
+  background: var(--main-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+
+  margin-right: 3rem;
+  padding: 2rem;
+  color: #fff;
+
+  border: none;
+  border-radius: 5rem;
+
+  cursor: pointer;
+
+  transition: background-color ease-in 0.2s;
+}
+
+.detail-buttons .comments a {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+  color: #fff;
+}
+
+.detail-buttons .comments a > svg {
+  margin-left: 1.2rem;
+}
+
+.detail-buttons .comments:hover {
+  background-color: var(--side-main-color);
+}
+
+button.comments > a {
+  font-size: 2.8rem;
+  font-family: "Poppins", sans-serif;
+}
+
+div.detail-text > p:nth-child(1) > a {
+  margin-left: 2rem !important;
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width: 1038px) {
+  div.detail-text > p:nth-child(1) > a {
+    margin-left: 0.6rem !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .detail-content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .detail-content .detail-text {
+    align-items: center;
+  }
+
+  .detail-buttons {
+    margin: 0;
+  }
+
+  .detail-buttons .menu {
+    margin: 2rem 0;
+  }
+
+  .detail-buttons .comments {
+    margin: 2rem 0;
+  }
+
+  .detail-content .detail-text p {
+    padding: 3rem 0;
+  }
+
+  .icon-logo img {
+    margin-top: 0.7rem;
+    width: 9.5rem;
+  }
+}
+
+@media only screen and (max-width: 657px) {
+  :root {
+    font-size: 48%;
+  }
+
+  .detail-content .detail-text p {
+    font-size: 2.6rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .detail-content .detail-text p {
+    display: flex;
+    text-align: center;
+    max-width: 88vw;
+    flex-direction: column;
+  }
+}

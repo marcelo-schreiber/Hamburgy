@@ -1,0 +1,223 @@
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+#root .comment-page {
+  height: 100%;
+  background-color: var(--main-color);
+}
+
+#root .comment-content {
+  background-color: var(--off-white);
+  border-radius: 20px;
+  min-height: 75vh;
+  margin: 0 4vw;
+}
+
+.comment-content #comment-title {
+  text-align: center;
+
+  color: #fff;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 8rem;
+  line-height: 12rem;
+
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.comment-content .main-comments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comment-content .main-comments .single-comment {
+  width: 87%;
+
+  background-color: #fafafa;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  margin: 3rem 0;
+  padding: 1.5rem;
+}
+
+.main-comments .single-comment .author {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.5rem;
+  line-height: 5.4rem;
+}
+
+.main-comments .single-comment .comment {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.2rem;
+  line-height: 3.6rem;
+}
+
+.main-comments .single-comment p.rating {
+  position: relative;
+  font-size: 2rem;
+  left: 96%;
+}
+
+.add-comment h1 {
+  margin: 3rem 0;
+  position: relative;
+  left: 6.5%;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4.8rem;
+  line-height: 7.2rem;
+}
+
+.add-comment form {
+  margin-left: 6.5%;
+}
+
+.add-comment label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.7rem;
+  line-height: 4.1rem;
+
+  display: block;
+}
+
+.add-comment label.name-label {
+  display: block;
+}
+
+.add-comment input[type="text"] {
+  width: 90%;
+  height: 6rem;
+
+  border: 2px solid rgba(0, 0, 0, 0.5);
+
+  font-size: 2.8rem;
+  font-family: "Poppins", sans-serif;
+
+  background: #fafafa;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+
+  padding-left: 1rem;
+}
+.add-comment .rating-block {
+  margin-left: 8%;
+  width: 50%;
+}
+
+.add-comment div.name {
+  width: 50%;
+}
+.add-comment input[type="number"] {
+  width: 6.2rem;
+  height: 6.2rem;
+
+  font-size: 2.8rem;
+  font-family: "Poppins", sans-serif;
+
+  border: 2px solid rgba(0, 0, 0, 0.5);
+
+  background: #fafafa;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+
+  padding-left: 1rem;
+}
+
+.add-comment .name-and-rating {
+  display: flex;
+  align-items: center;
+}
+
+.add-comment label.comment-section {
+  margin-top: 5rem;
+}
+
+.add-comment textarea {
+  width: 92%;
+
+  font-size: 2.8rem;
+  font-family: "Poppins", sans-serif;
+
+  padding-left: 1rem;
+  padding-top: 1rem;
+
+  background: #fafafa;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  min-height: 30rem;
+
+  resize: vertical;
+}
+
+.add-comment button.btn-submit {
+  margin: 3rem calc(92% - 17rem);
+  background-color: var(--main-color);
+  width: 17.5rem;
+  height: 6.2rem;
+
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  border: none;
+
+  transition: background-color ease-in 0.2s;
+
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+.add-comment button.btn-submit:hover {
+  background-color: var(--side-main-color);
+}
+
+@media only screen and (max-width: 825px) {
+  .comment-content #comment-title {
+    font-size: 6.5rem;
+    -webkit-text-stroke-width: 1px;
+  }
+
+  #comment-message {
+    font-size: 3.2rem;
+  }
+
+  .main-comments .single-comment p.rating {
+    left: 92%;
+  }
+
+  .main-comments .single-comment .author {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .add-comment input[type="text"] {
+    font-size: 2.2rem;
+  }
+  .add-comment label {
+    font-size: 1.8rem;
+  }
+  #comment-message {
+    font-size: 2.3rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .comment-content #comment-title {
+    font-size: 5.2rem;
+  }
+
+  #not-found {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+}

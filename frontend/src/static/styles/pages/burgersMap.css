@@ -1,0 +1,168 @@
+#root > div > aside {
+  background-color: var(--main-color);
+}
+
+.leaflet-popup-content-wrapper {
+  padding: 0;
+  background: transparent;
+  border: none;
+
+  max-height: 8rem;
+}
+
+.leaflet-popup-content {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.3rem;
+  padding: 0.5rem 0.4rem;
+  text-align: center;
+
+  background: var(--side-secondary-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0;
+}
+
+.leaflet-popup-content-wrapper > div > p {
+  margin-left: 2.5rem;
+}
+
+.leaflet-popup-content-wrapper > div > p a {
+  text-decoration: none;
+  color: #fff;
+}
+.leaflet-popup-tip-container {
+  background: transparent;
+  display: none;
+}
+
+.popup-bar-inside {
+  position: absolute;
+  top: 5;
+  left: 1.2rem;
+
+  height: 100%;
+  width: 10px;
+
+  font-size: 0;
+  background-color: var(--main-color);
+}
+
+.popup-bar-inside-closest {
+  position: absolute;
+  top: 5;
+  left: 1.2rem;
+
+  height: 100%;
+  width: 10px;
+
+  font-size: 0;
+  background-color: var(--main-color);
+}
+
+.map-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.map-content aside header a {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+.map-content aside header h2 {
+  margin: 8.5rem 1rem;
+
+  max-width: fit-content;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.4rem;
+  line-height: 54px;
+  text-align: center;
+
+  color: #fff;
+}
+
+.map-content aside footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 44vh;
+}
+
+.map-content aside {
+  height: 100vh;
+}
+
+.map-content aside header svg {
+  position: absolute;
+  left: 10;
+  top: 10;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 725px) {
+  .map-content {
+    display: block;
+  }
+
+  .map-content aside {
+    max-height: 9rem;
+  }
+
+  .map-content aside header h2 {
+    margin: 4rem auto 0 auto;
+
+    font-size: 2rem;
+  }
+
+  .map-content aside footer {
+    margin-top: 1.5rem;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .map-content aside footer img {
+    width: 70px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .map-content aside footer {
+    margin: 0 !important;
+  }
+  .map-content aside footer img {
+    width: 40px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .map-content aside header h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .popup-bar-inside {
+    height: 8.8rem;
+    width: 8px;
+  }
+
+  .popup-bar-inside-closest {
+    height: 8.8rem;
+    width: 8px;
+  }
+}

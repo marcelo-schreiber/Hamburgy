@@ -1,0 +1,130 @@
+.landing-page {
+  width: 100vw;
+  min-height: 100vh;
+
+  background: radial-gradient(
+      66.59% 141.55% at 69.34% 50%,
+      rgba(174, 171, 233, 0.79) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #8783d1 !important;
+}
+
+.Hamburgy {
+  padding: 4rem 0;
+  display: block;
+  margin: 0 auto;
+}
+
+.landing-page .landing-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-page .landing-content .landing-text {
+  margin-right: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-page .landing-content .images {
+  margin-left: 5rem;
+}
+
+.landing-page .landing-content .landing-text p {
+  max-width: 36.6rem;
+
+  font-weight: 400;
+  font-size: 4.7rem;
+  line-height: 7.2rem;
+  text-align: center;
+
+  color: #fff;
+}
+
+.landing-page .landing-content .landing-text a {
+  width: 29.5rem;
+  height: 9.1rem;
+  margin-top: 5.2rem;
+
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 4.2rem;
+  line-height: 7.2rem;
+  color: #fff;
+
+  background-color: var(--secondary-color);
+
+  border: none;
+  cursor: pointer;
+  mix-blend-mode: normal;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  transition: background-color ease-in 0.2s;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.landing-page .landing-content .landing-text a:hover {
+  background-color: var(--side-secondary-color);
+}
+
+.landing-page p.city {
+  padding-bottom: 1rem;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3.4rem;
+  line-height: 5.4rem;
+  /* identical to box height */
+
+  text-align: center;
+  color: #fff;
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width: 1030px) {
+  .landing-page {
+    font-size: 55%;
+  }
+  .landing-page .landing-content {
+    display: block;
+  }
+  .landing-page .landing-content .images img {
+    width: 45rem;
+    display: block;
+    margin: 4rem auto;
+  }
+  .landing-page .landing-content .images {
+    margin-left: 0;
+  }
+
+  .landing-page .landing-content .landing-text {
+    margin-right: 0;
+  }
+  .landing-page .landing-content .landing-text p {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  :root {
+    font-size: 48%;
+  }
+  .Hamburgy {
+    width: 240px;
+  }
+  .landing-page .landing-content .images {
+    margin-left: 0;
+  }
+  .landing-page .landing-content .images img {
+    width: 25rem;
+  }
+}
