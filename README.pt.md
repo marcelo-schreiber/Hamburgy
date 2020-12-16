@@ -68,10 +68,10 @@
 
 ### `npm start`
 
-### Your machine should be hosting an example in http://localhost:3000 and a restAPI in http://localhost:8080.
+### Sua máquina deve hospedar um exemplo em http://localhost:3000 e um restAPI em http://localhost:8080.
 
 <!-- CONTACT -->
-# Contact
+# Contato
 
 - Discord: [Losaeg#1619] 
 - Email: marcelorissette15@gmail.com
