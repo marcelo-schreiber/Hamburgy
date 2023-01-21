@@ -7,6 +7,7 @@
   </a>
 
   <h3 align="center">Hamburgy | Get to know and rate burger places in Curitiba.</h3>
+  <h3 align="center">No longer working, end of free tier in heroku</h3>
   <p align="center">
     A website sample is hosted in https://hamburgy.netlify.app
     <br />
